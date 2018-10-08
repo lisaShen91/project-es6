@@ -1,4 +1,4 @@
-import a from 'static/js/pages/test.js'
+import a from 'static/js/pages/test'
 
 console.log(a.name);
 const b = 1;

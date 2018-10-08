@@ -3,9 +3,9 @@ var express = require('express'),
 	cookieParser = require('cookie-parser'),
 	router = require('./router/index'),
 	path = require('path'),
+	babel = require('babel-core'),
 	app = express(),
 	Base64 = require('js-base64').Base64,
-	babel = require('babel-core'),
 	port = 3000;
 
 var morgan = require('morgan'),
@@ -27,7 +27,6 @@ app.use(express.urlencoded({
 	extended: false
 }));
 
-// app.use('/static', express.static('static'));
 app.use('/lib', express.static('lib'));
 app.use('/static', function(req, res, next) {
 	var filename = req.originalUrl;
@@ -43,6 +42,7 @@ app.use('/static', function(req, res, next) {
 		}
 	});
 });
+
 app.use('/static', express.static('static'));
 app.use('/node_modules', express.static('node_modules'));
 

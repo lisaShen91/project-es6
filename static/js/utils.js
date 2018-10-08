@@ -1,7 +1,6 @@
 /**
  * Created by shenlisha on 2018/9/28.
  */
-import _ from '../lib/underscore'
 
 function Utils() {
 	this.flatten = function(obj) {

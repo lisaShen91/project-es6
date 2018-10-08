@@ -4,4 +4,4 @@
 var a = {
 	name: 'lisa'
 };
-export default a
+export default a;

@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>haha</title>
+    <title>project-requireJS</title>
 </head>
 <body>
 123414
 <input type="text" value="">
 <button>搜索</button>
 <script src="/static/js/all.js"></script>
+<script>
+	require(['static/js/lib/test'], function(test) {
+		console.log(test.str)
+	});
+</script>
 </body>
 </html>
