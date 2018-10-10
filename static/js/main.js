@@ -1,5 +1,3 @@
-import a from 'static/js/pages/test'
+import test from 'static/js/pages/index';
 
-console.log(a.name);
-const b = 1;
-console.log(b);
+test();
